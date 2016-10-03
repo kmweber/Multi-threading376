@@ -1,7 +1,8 @@
 package weber_winslow;
 
-public class WorkerThread extends Thread implements Runnable  {
 
+public class WorkerThread implements Runnable  {
+	
 	private int row;
 	private int col;
 	private int[][] A;
@@ -22,7 +23,6 @@ public class WorkerThread extends Thread implements Runnable  {
     	for (int i = 0; i < 2; i++){    		
 			number += A[row][i] * B[i][col];
 		}
-    	System.out.println(number);	
         C[row][col] = number;
 	}
 
